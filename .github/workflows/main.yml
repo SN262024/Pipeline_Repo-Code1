@@ -1,0 +1,16 @@
+on: 
+  push:
+    branches: 
+      - 'feature/**'
+      - 'main'
+      - 'hotfix/**'
+
+jobs:
+  MyfirstJob: 
+    name: My job
+    runs-on: surendra-runner
+    steps:
+    - name: Hello Reliance faimly!
+      run: echo surendra Maharaj
+    
+    
