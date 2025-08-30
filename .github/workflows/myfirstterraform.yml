@@ -4,10 +4,10 @@ on:
     push:
      -'features/**'
      - 'main'
-         jobs:
-          terraformjob
-            runs-on: surendra-runner
-            steps:
-              - name: Checkout
-                uses: actions/checkout@v5.0.0
- 
+  jobs:
+    terraformjob
+      runs-on:surendra-runner
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v5.0.0
+
