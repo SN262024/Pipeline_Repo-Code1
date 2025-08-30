@@ -4,7 +4,7 @@ on:
     push:
      -'features/**'
      - 'main'
-        jobs:
+         jobs:
           terraformjob
             runs-on: surendra-runner
             steps:
