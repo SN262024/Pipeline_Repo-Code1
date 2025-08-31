@@ -19,7 +19,7 @@ jobs:
       uses: Azure/login@v2.3.0
       with:
         # ClientId of the Azure Service principal created.
-        client-id: 5e839716-4977-47fa-9efb-d79c181112d9
+        client-id: 82b37c9f-3762-4c6f-bd5f-40f0f9b40500
         # TenantId of the Azure Service principal created.
         tenant-id: e0eb0b0e-a455-477c-b0e8-56b7f7f4efb4
         # Azure subscriptionId
