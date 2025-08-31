@@ -24,6 +24,15 @@ jobs:
         tenant-id: e0eb0b0e-a455-477c-b0e8-56b7f7f4efb4
         # Azure subscriptionId
         subscription-id: 177b7e12-5f03-4f63-bcd1-ed6d1d776bff
+
+    - name: Install Terraform
+     
+      uses: little-core-labs/install-terraform@v2.0.0
+      with:
+        # Version of terraform to download
+        version: 1.13.0
+              
+    
     
           
       
