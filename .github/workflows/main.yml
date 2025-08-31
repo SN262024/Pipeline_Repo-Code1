@@ -8,9 +8,21 @@ on:
 jobs:
   MyfirstJob: 
     name: My job
-    runs-on: surendra-runner
+    runs-on: [surendra-runner,self-hosted]
     steps:
     - name: Hello Reliance faimly!
       run: echo surendra Maharaj
+    - name: Azure Login
+      uses: Azure/login@v2.3.0
+      with:
+        # ClientId of the Azure Service principal created.
+        client-id: 5e839716-4977-47fa-9efb-d79c181112d9
+        # TenantId of the Azure Service principal created.
+        tenant-id: e0eb0b0e-a455-477c-b0e8-56b7f7f4efb4
+        # Azure subscriptionId
+        subscription-id: 177b7e12-5f03-4f63-bcd1-ed6d1d776bff
+    
+          
+      
     
     
