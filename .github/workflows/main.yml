@@ -31,29 +31,29 @@ jobs:
       with:
         # Version of terraform to download
         version: 1.13.0
-          jobs:
-          MyfirstJob:
-          runs-on: [self-hosted, surendra-runner]
-          steps:
-            - name: Checkout
-              uses: actions/checkout@v4
-      
-            - name: Setup Terraform
-              uses: hashicorp/setup-terraform@v3
-              with:
-                terraform_version: 1.9.8
-      
-            - name: Terraform Init
-              working-directory: Git_Rivision
-              run: terraform init -input=false
-      
-            - name: Terraform Validate
-              working-directory: Git_Rivision
-              run: terraform validate -no-color
-      
-            - name: Terraform Plan
-              working-directory: Git_Rivision
-              run: terraform plan -no-color -input=false
+  jobs:
+     MyfirstJob:
+      runs-on: [self-hosted, surendra-runner]
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+  
+        - name: Setup Terraform
+          uses: hashicorp/setup-terraform@v3
+          with:
+            terraform_version: 1.9.8
+
+      - name: Terraform Init
+        working-directory: Git_Rivision
+        run: terraform init -input=false
+
+      - name: Terraform Validate
+        working-directory: Git_Rivision
+        run: terraform validate -no-color
+
+      - name: Terraform Plan
+        working-directory: Git_Rivision
+        run: terraform plan -no-color -input=false
   
 
     
